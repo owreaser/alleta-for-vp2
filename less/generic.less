@@ -1,0 +1,65 @@
+:root {
+  --primary-fg: #3333aa;
+  --primary-bg: #222288;
+  --primary-bright: #9999ff;
+  --secondary-fg: #aa3333;
+  --secondary-bg: #882222;
+  --secondary-bright: #ff9999;
+  --text: #dddddd;
+  --title-text: #ffffff;
+
+  --box-shadow-color: black;
+  --box-shadow-light: 0 0 5px var(--box-shadow-color), 0 0 10px var(--box-shadow-color), 5px 5px 30px var(--box-shadow-color);
+  --box-shadow-dark: var(--box-shadow-light), 10px 10px 80px var(--box-shadow-color);
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background-color: black;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: var(--title-text);
+}
+
+h1 {
+  color: var(--title-text);
+  margin: 0;
+  font-size: 32px;
+}
+
+// .gradient {
+  // background-image: linear-gradient(60deg, var(--primary-bg) 10%, var(--primary-fg) 90%);
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // color: transparent;
+  // display: inline-block;
+// }
+
+#navbar {
+  background-color: var(--secondary-bg);
+  padding: 20px 5px;
+  box-sizing: border-box;
+  width: 100vw;
+  box-shadow: var(--box-shadow-light);
+
+  // to make drop shadow work
+  position: relative;
+  z-index: 5;
+
+  #navbar-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  a {
+    font-weight: 700;
+  }
+}

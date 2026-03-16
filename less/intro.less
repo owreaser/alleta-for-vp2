@@ -1,0 +1,74 @@
+
+#intro-container {
+  background-image: url("./img/art3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+
+  #intro {
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(~"min(0.5vw, 7px)");
+
+    #intro-content {
+      background-color: var(--secondary-bg);
+      box-shadow: var(--box-shadow-light);
+      box-sizing: border-box;
+      padding: 20px 50px;
+      width: 400px;
+      max-width: 90vw;
+      height: 300px;
+      max-height: 62.5vh;
+      // position: absolute;
+      // top: calc(50vh - 200px);
+      // left: calc(50vw - 500px);
+      // border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+    }
+
+    #intro-img img {
+      width: 300px;
+      max-height: 62.5vh;
+      object-fit: cover;
+      box-shadow: var(--box-shadow-light);
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  #intro-container {
+    #intro {
+      gap: 30px;
+
+      #intro-content {
+        width: 300px;
+        padding: 15px 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  #intro-container {
+    height: unset;
+
+    #intro {
+      height: auto;
+      min-height: 75vh;
+      flex-direction: column;
+      padding: 40px 0;
+      max-width: unset;
+    }
+  }
+}

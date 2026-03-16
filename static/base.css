@@ -1,0 +1,123 @@
+:root {
+  --primary-fg: #3333aa;
+  --primary-bg: #222288;
+  --primary-bright: #9999ff;
+  --secondary-fg: #aa3333;
+  --secondary-bg: #882222;
+  --secondary-bright: #ff9999;
+  --text: #dddddd;
+  --title-text: #ffffff;
+  --box-shadow-color: black;
+  --box-shadow-light: 0 0 5px var(--box-shadow-color), 0 0 10px var(--box-shadow-color), 5px 5px 30px var(--box-shadow-color);
+  --box-shadow-dark: var(--box-shadow-light), 10px 10px 80px var(--box-shadow-color);
+}
+body {
+  margin: 0;
+  color: var(--text);
+  background-color: black;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+a {
+  color: var(--title-text);
+}
+h1 {
+  color: var(--title-text);
+  margin: 0;
+  font-size: 32px;
+}
+#navbar {
+  background-color: var(--secondary-bg);
+  padding: 20px 5px;
+  box-sizing: border-box;
+  width: 100vw;
+  box-shadow: var(--box-shadow-light);
+  position: relative;
+  z-index: 5;
+}
+#navbar #navbar-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  white-space: nowrap;
+}
+#navbar a {
+  font-weight: 700;
+}
+#intro-container {
+  background-image: url("./img/art3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+}
+#intro-container #intro {
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(min(0.5vw, 7px));
+}
+#intro-container #intro #intro-content {
+  background-color: var(--secondary-bg);
+  box-shadow: var(--box-shadow-light);
+  box-sizing: border-box;
+  padding: 20px 50px;
+  width: 400px;
+  max-width: 90vw;
+  height: 300px;
+  max-height: 62.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intro-container #intro #intro-content h1 {
+  margin-bottom: 10px;
+}
+#intro-container #intro #intro-img img {
+  width: 300px;
+  max-height: 62.5vh;
+  object-fit: cover;
+  box-shadow: var(--box-shadow-light);
+}
+#intro-container #intro #intro-img-alt img {
+  width: 400px;
+  box-shadow: var(--box-shadow-light);
+}
+@media (max-width: 850px) {
+  #intro-container #intro {
+    gap: 30px;
+  }
+  #intro-container #intro #intro-content {
+    width: 300px;
+    padding: 15px 30px;
+  }
+}
+@media (max-width: 660px) {
+  #intro-container {
+    height: unset;
+  }
+  #intro-container #intro {
+    height: auto;
+    min-height: 75vh;
+    flex-direction: column;
+    padding: 40px 0;
+    max-width: unset;
+  }
+}
+#about {
+  background-color: var(--primary-bg);
+  padding: 20px 5vw;
+}
+#why-me {
+  background-color: var(--secondary-bg);
+  padding: 20px 5vw;
+}
+#how-to-vote {
+  background-color: var(--primary-bg);
+  padding: 20px 5vw;
+}
