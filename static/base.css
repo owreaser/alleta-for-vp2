@@ -202,8 +202,16 @@ h1 {
     display: none;
   }
 }
-#how-to-vote-container {
+#ideas-container {
   background-color: var(--pink);
+  padding: 50px 5vw;
+}
+#ideas-container #ideas {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#how-to-vote-container {
+  background-color: var(--yellow);
   padding: 50px 5vw;
 }
 #how-to-vote-container #how-to-vote {
@@ -211,7 +219,7 @@ h1 {
   margin: 0 auto;
 }
 #queso-container {
-  background-color: var(--yellow);
+  background-color: var(--pink);
   padding: 50px 5vw;
 }
 #queso-container #queso {
@@ -226,7 +234,7 @@ h1 {
 }
 #queso-container #queso #queso-image {
   border-radius: var(--border-radius);
-  outline: 6px solid var(--peach);
+  outline: 6px solid var(--dark-pink);
   width: 400px;
   max-width: 90vw;
 }
