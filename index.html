@@ -11,16 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./static/base.css?v=0.1.1">
+    <link rel="icon" href="./static/img/favicon.png">
+    <link rel="stylesheet" href="./static/base.css?v=1.0.0">
   </head>
 
   <body>
     <nav id="navbar">
       <div id="navbar-inner">
-        <div><a href="#about">About Me</a></div>
-        <div><a href="#why-me">Why Me?</a></div>
-        <div><a href="#how-to-vote">How to Vote</a></div>
-        <div><a href="#queso">Queso</a></div>
+        <div><a href="#about-container">About Me</a></div>
+        <div><a href="#why-me-container">Why Me?</a></div>
+        <div><a href="#how-to-vote-container">How to Vote</a></div>
+        <div><a href="#queso-container">Queso</a></div>
       </div>
     </nav>
 
@@ -29,7 +30,7 @@
         <div id="intro-content">
           <div>
             <h1>My name is <br><span class="gradient">Alleta Garner</span></h1>
-            and  I&rsquo;m running for <b>second vice president</b>.
+            and I&rsquo;m running for <b>second vice president</b>.
             <p>Let me tell you about myself.</p>
           </div>
         </div>
@@ -44,7 +45,7 @@
       <div id="about">
         <div>
           <h1>About Me</h1>
-          <p>My name is Alleta Garner. I&rsquo;m 16 years old and I attend Needham B. Broughton High School, as many of you know! I love to hangout with my friends and spend time with my family including my two dogs named Ivy and Parker. In my free time, I like to write stories, journal or <a href="./art.html">make art</a>.</p>
+          <p>My name is <b>Alleta Garner</b>. I&rsquo;m 16 years old and I attend Needham B. Broughton High School, as many of you know! I love to hangout with my friends and spend time with my family including my two dogs named Ivy and Parker. In my free time, I like to write stories, journal or <a href="./art.html">make art</a>.</p>
         </div>
 
         <div id="about-images">
@@ -54,24 +55,47 @@
       </div>
     </div>
 
-    <div id="why-me">
-      <h1>Why Me?</h1>
-      <p>This section is obviously still a <b>work in progress</b></p>
-      <p>I&rsquo;m running to be second vice president for Broughton! You may be wondering that that role entails, and why you should vote for me. I&rsquo;ll explain that all to you!</p>
-      <p>The second vice president of Broughton not only assists the president and first vice president in decision making and actions, but the role also includes being president of the Interclub Council. This means helping our clubs be active and running.</p>
-      <p>As a member of multiple clubs with multiple leadership positions in them, our clubs are incredibly important to me. If elected as second vice president, I will take on my role as president of the Interclub Council by not only continuing to help our clubs thrive, but also creating an awards system for the most active clubs.</p>
+    <div id="why-me-container">
+      <div id="why-me">
+        <div id="why-me-image-top">
+          <img src="./static/img/why-me.jpg" class="why-me-image">
+        </div>
+
+        <div>
+          <h1>Why Me?</h1>
+          <p>I&rsquo;m running to be <b>second vice president for Broughton</b>! You may be wondering that that role entails, and why you should vote for me. I&rsquo;ll explain that all to you!</p>
+
+          <div id="why-me-image-bottom">
+            <img src="./static/img/why-me.jpg" class="why-me-image">
+          </div>
+
+          <p>The second vice president of Broughton not only assists the president and first vice president in decision making and actions, but the role also includes being president of the Interclub Council. This means helping our clubs be active and running.</p>
+          <p>As a member of multiple clubs with multiple leadership positions in them, our clubs are incredibly important to me. If elected as second vice president, I will take on my role as president of the Interclub Council by not only continuing to help our clubs thrive, but also creating an awards system for the most active clubs.</p>
+        </div>
+      </div>
     </div>
 
-    <div id="how-to-vote">
-      <h1>How do I vote?</h1>
-      <p>This section is obviously still a <b>work in progress</b></p>
-      <p>On Friday, March 27th, we will have an advisory (Weird, right?) and that&rsquo;s the day you vote for Secretary Treasurer, Second VP (Me!), First VP, and President! That whole week there will be no Caps Connection and you will go straight to the Auditorium to hear speeches (Depending on your grade level. If you&rsquo;re a senior &mdash; you&rsquo;re lucky! You have a Caps Connection!) If voting goes into run offs, you will vote on April 7th, when we get back from spring break!</p>
+    <div id="how-to-vote-container">
+      <div id="how-to-vote">
+        <h1>How do I vote?</h1>
+        <p>On <b>Friday, March 27th</b>, we will have an advisory (Weird, right?) and that&rsquo;s the day you vote for Secretary Treasurer, Second VP (Me!), First VP, and President! That whole week there will be <b>no Caps Connection</b> and you will go straight to the Auditorium to hear speeches (Depending on your grade level. If you&rsquo;re a senior &mdash; you&rsquo;re lucky! You have a Caps Connection!)</p>
+        <p>If voting goes into runoffs, you will vote on April 7th, when we get back from spring break!</p>
+      </div>
     </div>
 
-    <div id="queso">
-      <h1>How do I vote?</h1>
-      <p>This section is obviously still a <b>work in progress</b></p>
-      <p>On Friday, March 27th, we will have an advisory (Weird, right?) and that&rsquo;s the day you vote for Secretary Treasurer, Second VP (Me!), First VP, and President! That whole week there will be no Caps Connection and you will go straight to the Auditorium to hear speeches (Depending on your grade level. If you&rsquo;re a senior -- you&rsquo;re lucky! You have a Caps Connection!) If categories go into run offs, you will vote on April 7th, when we get back from spring break!</p>
+    <!-- TODO: endorsements -->
+
+    <div id="queso-container">
+      <div id="queso">
+        <div>
+          <h1>Queso</h1>
+          <p>Queso is the official mascot of the Alleta for 2nd VP Campaign.</p>
+        </div>
+
+        <div>
+          <img id="queso-image" src="./static/img/queso.jpg">
+        </div>
+      </div>
     </div>
 
     <!-- <script src="./static/app.js"></script> -->
