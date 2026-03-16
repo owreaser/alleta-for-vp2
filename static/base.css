@@ -125,26 +125,11 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-#about-container #about #about-images {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+#about-container #about #about-image {
   border-radius: var(--border-radius);
   outline: 6px solid var(--dark-pink);
-}
-#about-container #about #about-images #about-image-1 {
-  display: block;
-  width: 200px;
-  max-width: 45vw;
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
-}
-#about-container #about #about-images #about-image-2 {
-  display: block;
-  width: 200px;
-  max-width: 45vw;
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
+  width: 300px;
+  max-width: 90vw;
 }
 @media (max-width: 825px) {
   #about-container #about {
