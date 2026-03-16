@@ -1,8 +1,8 @@
 
 #intro-container {
-  background-image: url("./img/art3.jpg");
+  background-image: url("./img/sky.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 65vh;
 
   #intro {
@@ -13,11 +13,10 @@
     gap: 100px;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(~"min(0.5vw, 7px)");
+    // backdrop-filter: blur(~"min(0.5vw, 7px)");
 
     #intro-content {
-      background-color: var(--secondary-bg);
-      box-shadow: var(--box-shadow-light);
+      background-color: var(--yellow);
       box-sizing: border-box;
       padding: 20px 50px;
       width: 400px;
@@ -27,10 +26,11 @@
       // position: absolute;
       // top: calc(50vh - 200px);
       // left: calc(50vw - 500px);
-      // border-radius: 4px;
+      border-radius: var(--border-radius);
       display: flex;
       justify-content: center;
       align-items: center;
+      outline: 6px solid var(--peach);
 
       h1 {
         margin-bottom: 10px;
@@ -40,13 +40,18 @@
     #intro-img img {
       width: 300px;
       max-height: 62.5vh;
+      border-radius: var(--border-radius);
       object-fit: cover;
-      box-shadow: var(--box-shadow-light);
+      outline: 6px solid var(--peach);
     }
   }
 }
 
 @media (max-width: 850px) {
+  :root {
+    --border-radius: 12px;
+  }
+
   #intro-container {
     #intro {
       gap: 30px;

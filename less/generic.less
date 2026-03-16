@@ -1,23 +1,35 @@
 :root {
-  --primary-fg: #3333aa;
-  --primary-bg: #222288;
-  --primary-bright: #9999ff;
-  --secondary-fg: #aa3333;
-  --secondary-bg: #882222;
-  --secondary-bright: #ff9999;
-  --text: #dddddd;
-  --title-text: #ffffff;
+  // --primary-fg: #3333aa;
+  // --primary-bg: #222288;
+  // --primary-bright: #9999ff;
+  // --secondary-fg: #aa3333;
+  // --secondary-bg: #882222;
+  // --secondary-bright: #ff9999;
+  // --text: var(--peach);
+  // --title-text: var(--yellow);
 
-  --box-shadow-color: black;
-  --box-shadow-light: 0 0 5px var(--box-shadow-color), 0 0 10px var(--box-shadow-color), 5px 5px 30px var(--box-shadow-color);
-  --box-shadow-dark: var(--box-shadow-light), 10px 10px 80px var(--box-shadow-color);
+  --peach: #ffd599; // hsl(35, 100%, 90%);
+  --yellow: #ffeb99; // hsl(48, 100%, 90%);
+
+  --pink: #ffd6d6; // hsl(0, 79%, 77%);
+  --dark-pink: #f0b0b0;
+  --orange: #ffa15d; // hsl(25, 80%, 60%);
+
+  --text: #b34b00;
+  --title-text: var(--text);
+
+  --border-radius: 96px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   margin: 0;
   color: var(--text);
-  background-color: black;
-  font-family: sans-serif;
+  background-color: white;
+  font-family: "Arapey", serif;
   font-size: 18px;
 }
 
@@ -40,11 +52,10 @@ h1 {
 // }
 
 #navbar {
-  background-color: var(--secondary-bg);
+  background-color: var(--pink);
   padding: 20px 5px;
   box-sizing: border-box;
   width: 100vw;
-  box-shadow: var(--box-shadow-light);
 
   // to make drop shadow work
   position: relative;

@@ -7,7 +7,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link rel="stylesheet" href="./static/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/base.css?v=0.1.1">
   </head>
 
   <body>
@@ -16,6 +20,7 @@
         <div><a href="#about">About Me</a></div>
         <div><a href="#why-me">Why Me?</a></div>
         <div><a href="#how-to-vote">How to Vote</a></div>
+        <div><a href="#queso">Queso</a></div>
       </div>
     </nav>
 
@@ -35,10 +40,18 @@
       </div>
     </div>
 
-    <div id="about">
-      <h1>About Me</h1>
-      <p>This section is obviously still a <b>work in progress</b></p>
-      <p>My name is Alleta Garner. I&rsquo;m 16 years old and I attend Needham B. Broughton High School, as many of you know! I love to hangout with my friends and spend time with my family including my two dogs named Ivy and Parker. In my free time, I like to write stories, journal or make art.</p>
+    <div id="about-container">
+      <div id="about">
+        <div>
+          <h1>About Me</h1>
+          <p>My name is Alleta Garner. I&rsquo;m 16 years old and I attend Needham B. Broughton High School, as many of you know! I love to hangout with my friends and spend time with my family including my two dogs named Ivy and Parker. In my free time, I like to write stories, journal or <a href="./art.html">make art</a>.</p>
+        </div>
+
+        <div id="about-images">
+          <img id="about-image-1" src="./static/img/about1.jpg">
+          <img id="about-image-2" src="./static/img/about2.jpg">
+        </div>
+      </div>
     </div>
 
     <div id="why-me">
@@ -52,9 +65,15 @@
     <div id="how-to-vote">
       <h1>How do I vote?</h1>
       <p>This section is obviously still a <b>work in progress</b></p>
-      <p>something goes here eventually</p>
+      <p>On Friday, March 27th, we will have an advisory (Weird, right?) and that&rsquo;s the day you vote for Secretary Treasurer, Second VP (Me!), First VP, and President! That whole week there will be no Caps Connection and you will go straight to the Auditorium to hear speeches (Depending on your grade level. If you&rsquo;re a senior &mdash; you&rsquo;re lucky! You have a Caps Connection!) If voting goes into run offs, you will vote on April 7th, when we get back from spring break!</p>
     </div>
 
-    <script src="./static/app.js"></script>
+    <div id="queso">
+      <h1>How do I vote?</h1>
+      <p>This section is obviously still a <b>work in progress</b></p>
+      <p>On Friday, March 27th, we will have an advisory (Weird, right?) and that&rsquo;s the day you vote for Secretary Treasurer, Second VP (Me!), First VP, and President! That whole week there will be no Caps Connection and you will go straight to the Auditorium to hear speeches (Depending on your grade level. If you&rsquo;re a senior -- you&rsquo;re lucky! You have a Caps Connection!) If categories go into run offs, you will vote on April 7th, when we get back from spring break!</p>
+    </div>
+
+    <!-- <script src="./static/app.js"></script> -->
   </body>
 </html>
