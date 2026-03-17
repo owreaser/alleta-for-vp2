@@ -141,6 +141,9 @@ h1 {
     flex-direction: column;
     gap: 30px;
   }
+  #about-container #about #about-image {
+    width: 200px;
+  }
 }
 #why-me-container {
   background-color: var(--yellow);
